@@ -1,4 +1,4 @@
-package main
+package api
 
 import (
 	"fmt"
@@ -86,4 +86,8 @@ func handleMedia(c web.C, w http.ResponseWriter, r *http.Request) {
 
 	fmt.Fprintf(w, "Hello, %v", m1)
 
+}
+
+func Add(a, b int) int {
+	return a + b
 }
