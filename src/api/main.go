@@ -39,7 +39,7 @@ func init() {
 		pass:    "",
 		host:    "127.0.0.1",
 		port:    "13306",
-		dbName:  "lmp",
+		dbName:  "ssp",
 	}
 
 	db, err := gorm.Open(cfg.dialect, cfg.uri())
@@ -70,7 +70,7 @@ func handleMedia(c web.C, w http.ResponseWriter, r *http.Request) {
 		pass:    "",
 		host:    "127.0.0.1",
 		port:    "13306",
-		dbName:  "lmp",
+		dbName:  "ssp",
 	}
 
 	db, err := gorm.Open(cfg.dialect, cfg.uri())
